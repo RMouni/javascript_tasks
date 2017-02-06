@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>js Task 1</title>
+	<style type="text/css">
+		button{
+			style=height:20px;width:100px;
+			background-color:powderblue;
+		}
+		p{
+			font-family:Brush Script MT;
+		}
+		body{
+			background-color:Pink;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<p id="mouni">Hi...This is Mouni<p>
+	<button onclick="ColorRed()">RED</button>
+	<button onclick="ColorBlue()">BLUE</button>
+	<button onclick="ColorGreen()">GREEN</button>
+	<script type="text/javascript">
+		var ele=document.getElementById("mouni");
+		ele.style.fontSize="40px";
+		function ColorRed(){
+			ele.style.color="red";
+			ele.style.fontSize="50px";
+			}
+		function ColorBlue(){
+			ele.style.color="blue";
+			ele.style.fontSize="60px";
+			}
+		function ColorGreen(){
+			ele.style.color="green";
+			ele.style.fontSize="70px";
+			}
+	</script>
+</body>
+</html>
