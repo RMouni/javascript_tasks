@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>condition</title>
+</head>
+<body>
+	<p id="correct"></p>
+	<p id="wrong"></p>
+	
+	<script type="text/javascript">
+		var a = "10";
+		var b = "10";
+		if(a==b){
+			var elem = document.getElementById("correct");
+			elem.innerHTML = "the value of a & b are equal";
+		}
+		else{
+			var elem = document.getElementById("wrong");
+			elem.innerHTML = "the values are not equal";
+		}
+	</script>
+</body>
+</html>
