@@ -1,13 +1,19 @@
 <html>
 <head>
-	<title>ARRAY-js</title>
+	<title>KeyUp</title>
 </head>
 <body>
-	<p id="demo"></p>
+
+    <h2 id="heading" style="font-family:Castellar;"></h2>
+    <input id="inputbox" type="text" onkeyup="display()"/>
 	<script type="text/javascript">
-		var subjects = ["stld","ss","ac"];
-		var elem=document.getElementById("demo");
-		elem.innerHTML = subjects[1];
+		function display(){
+			var inputbox = document.getElementById('inputbox');
+			var elem = document.getElementById('heading');
+			elem.innerHTML = inputbox.value;
+		}
+
 	</script>
+
 </body>
 </html>

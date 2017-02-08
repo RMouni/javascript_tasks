@@ -1,22 +1,30 @@
 <html>
 <head>
-	<title>array js</title>
+	<title>Checkbox</title>
 </head>
 <body>
-		<script type="text/javascript">
-			var a=[1,2,3,4,5,6,7]
-			console.log(a);
-			console.log(a[4]);
-			var b=["hello","Mouni","hii",19,87.23]
-			console.log(b);
-			console.log(b[2]);
-			var c = {
-			name:"mouni",
-			age:18,
+	<h2 id="English"></h2>
+	<h2 id="Telugu"></h2>
+	<h2 id="Hindi"></h2>
+	<input id="English_box" type="checkbox" onchange="display('English')">English</input>
+	
+	<input id="Telugu_box" type="checkbox" onchange="display('Telugu')">Telugu</input>
+	
+	<input id="Hindi_box" type="checkbox" onchange="display('Hindi')">Hindi</input>
+
+	<script type="text/javascript">
+		function display(check){
+			var box = document.getElementById(check+"_box");
+			var elem = document.getElementById(check);
+			if(box.checked == true){
+				elem.innerHTML = check;
 			}
-			console.log(c);
-			console.log(c.name);
-			console.log(c.age);
-		</script>
+			else{
+				elem.innerHTML = "";
+			}
+		}
+		
+	</script>
+	
 </body>
 </html>
